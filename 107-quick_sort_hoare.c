@@ -18,10 +18,12 @@ int partition_hoare(int *array, int low, int high, size_t size)
 
 	while (array)
 	{
-		while (array[i] < pivot)
+		do{
 			i++;
-		while ((array[j] > pivot))
+		} while (array[i] < pivot);
+		do{
 			j--;
+		} while ((array[j] > pivot));
 		if (i >= j)
 			return (j);
 		aux = array[i];
@@ -29,7 +31,7 @@ int partition_hoare(int *array, int low, int high, size_t size)
 		array[j] = aux;
 		print_array(array, size);
 	}
-	return (i + 1);
+	return (0);
 }
 
 /**
