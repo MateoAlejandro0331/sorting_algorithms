@@ -48,7 +48,7 @@ int partition(int *array, int low, int high, size_t size)
  * Return: void.
  */
 
-void recursion_quick_sort(int *array, int low, int high, ssize_t size)
+void recursion_quick_sort(int *array, int low, int high, size_t size)
 {
 	int parti;
 
