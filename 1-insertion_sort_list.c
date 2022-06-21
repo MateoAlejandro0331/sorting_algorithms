@@ -11,6 +11,9 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *aux = *list;
 
+	if (!list || !*list)
+		return;
+
 	aux = aux->next;
 	while (aux)
 	{
