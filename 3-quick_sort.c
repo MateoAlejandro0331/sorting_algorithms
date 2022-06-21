@@ -55,8 +55,8 @@ void recursion_quick_sort(int *array, int low, int high, size_t size)
 	if (low < high)
 	{
 		parti = partition(array, low, high, size);
-		recursion_quick_sort(array, parti + 1, high, size);
 		recursion_quick_sort(array, low, parti - 1, size);
+		recursion_quick_sort(array, parti + 1, high, size);
 	}
 }
 
